@@ -1,0 +1,114 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+    color: #3d769b !important;
+    background-color: rgb(255,255,255);
+}
+
+.landing-img{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.4);
+    padding: 2em;
+    position: absolute;
+    z-index: 5;
+    top:-300%;
+    left:-20%;
+}
+
+.links
+{
+    @extend .col-xs-1;
+    @extend .btn;
+    @extend .btn-default;
+}
+
+h2{
+    margin: 0;     
+    color: #FFF;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 550px !important;
+}
+
+.item img{
+    @extend img-responsive;
+    width: 100%;
+}
+
+.bs-example{
+    margin-bottom: 20px;
+}
+
+.navbar{
+    background-color: rgba(242,242,244,.5);
+    border:white;
+}
+
+.footer{
+    
+}
+
+.navbar-default .navbar-nav li a{
+    color: #3d769b;
+}
+.navbar-default .navbar-nav li a:hover{
+    color:rgba(0,0,0,1);
+}
+
+
+
+.phone{
+    font-size: 24px !important;
+    color: #3d769b !important;
+    font-family: "HelveticaNeue-Light"
+}
+
+#AmenitiesTab:hover{
+    //background-color: rgba(255,129,0,.8);
+    background-color: #3d769b !important;
+    color:white;
+}
+
+#AmenitiesTab
+{
+    @extend .col-lg-offset-7;
+}
+
+#LocationTab:hover{
+    //background-color: rgba(1,243,62,.8);
+    background-color: #3d769b;
+    color:white;
+}
+
+#ContractTab:hover{
+    //background-color: rgba(255,222,0,.8);
+    background-color: #3d769b;
+    color:white;
+}
+
+#ContactTab:hover{
+    //background-color: rgba(255,83,83,.8);
+    background-color: #3d769b;
+    color:white;
+}
+
+.social img{
+    width: 30px;
+}
+
+#amentiesStuff{
+    margin-bottom: 205px;
+}
+
+

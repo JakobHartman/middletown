@@ -1,0 +1,43 @@
+= render 'navbar'
+.container
+  .row
+    %button.links#AmenitiesTab Amenities
+    %button.links#LocationTab Location
+    %button.links#ContractTab Contract
+    %button.links#ContactTab Contact Us
+.container
+  .bs-example.col-xs-12
+    .carousel.slide{:id=>"slide-images", :data => {:ride => "carousel", :interval => "5000"}}
+      %ol.carousel-indicators
+        %li.active{:"data-slide-to" => "0", :"data-target" => ".carousel"}
+        %li{:"data-slide-to" => "1", :"data-target" => ".carousel"}
+        %li{:"data-slide-to" => "2", :"data-target" => ".carousel"}
+        %li{:"data-slide-to" => "3", :"data-target" => ".carousel"}
+        %li{:"data-slide-to" => "4", :"data-target" => ".carousel"}
+      .carousel-inner
+        .item.active
+          = image_tag "apartment.jpg"
+          .container
+            .carousel-caption
+              %h3.overlay Affordable Married Housing
+        .item
+          = image_tag "town.jpg"
+          .container
+            .carousel-caption
+              %h3.overlay Washer and dryer in every apartment.
+        .item
+          = image_tag "street.jpg"
+          .container
+            .carousel-caption
+              %h3.overlay Two blocks from campus.
+        .item
+          = image_tag "room.jpg"
+          .container
+            .carousel-caption
+              %h3.overlay Modernized homes for the family.
+        .item
+          = image_tag "window.jpg"
+          .container
+            .carousel-caption
+              %h3.overlay Close to rexburg business'.
+= render 'footer'

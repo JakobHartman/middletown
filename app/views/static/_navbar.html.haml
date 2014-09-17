@@ -1,0 +1,10 @@
+%nav.navbar.navbar-default{:role => "navigation"}
+  .container-fluid
+    .navbar-header
+      =link_to "Middletown Apartments Logo Here", root_path,:class => :"navbar-brand"
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          .phone.navbar-brand 208.359.5141
+        %li>
+          =link_to (image_tag "facebook.jpg"),root_path, :class => [:social]
